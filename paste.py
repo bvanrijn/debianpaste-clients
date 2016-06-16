@@ -173,7 +173,7 @@ if __name__ == "__main__":
 
     usage = "usage: %prog [options] ACTION <args>\n\n" +\
             "actions:\n" +\
-            "\n".join(["%12s\t%s" % (v[0], inspect.getdoc(getattr(Action, k)).split('\n')[0]) \
+            "\n".join(["%12s\t%s" % (v[0], inspect.getdoc(str(getattr(Action, k))).split('\n')[0]) \
                 for (k,v) in list(actions_r.items())])
     running_user = getpass.getuser()
     parser = optparse.OptionParser(usage=usage)
