@@ -6,7 +6,7 @@
 ################################################################################
 
 import sys
-import xmlrpc.client
+import xmlrpclib
 import optparse
 import inspect
 import getpass
@@ -32,7 +32,7 @@ class Action(object):
         self.opts_ = opts
 
     def _createProxy(self):
-        return xmlrpc.client.ServerProxy(self.opts_.server, verbose=False)
+        return xmlrpclib.ServerProxy(self.opts_.server, verbose=False)
 
     def _callProxy(self, functor, server=None):
         '''Wrapper for xml-rpc calls to server which throws an
@@ -127,10 +127,10 @@ class Action(object):
 
         if alias in actions:
             fun = actions[alias]
-            print(inspect.getdoc(self.__getattribute__(fun)))
-            print("\naliase: " + " ".join([i for i in actions_r[fun] if i != alias]))
+            print inspect.getdoc(self.__getattribute__(fun))
+            print "\naliase: " + " ".join([i for i in actions_r[fun] if i != alias])
         else:
-            print("Error: No such command - %s" % (alias))
+            print "Error: No such command - %s" % (alias)
             OPT_PARSER.print_usage()
         sys.exit(0)
 
@@ -162,14 +162,14 @@ if __name__ == "__main__":
         aliases = i.split()
         cmd = aliases.pop(0)
         actions_r[cmd] = aliases
-    for (k,v) in list(actions_r.items()):
+    for (k,v) in actions_r.items():
         for i in v:
             actions[i] = k
 
     usage = "usage: %prog [options] ACTION <args>\n\n" +\
             "actions:\n" +\
             "\n".join(["%12s\t%s" % (v[0], inspect.getdoc(getattr(Action, k)).split('\n')[0]) \
-                for (k,v) in list(actions_r.items())])
+                for (k,v) in actions_r.items()])
     running_user = getpass.getuser()
     parser = optparse.OptionParser(usage=usage)
     parser.add_option('-n', '--name', default=running_user, help="Name of poster")
@@ -192,13 +192,13 @@ if __name__ == "__main__":
         try:
             (msg, ret) = action.call(actions[cmd])
             if opts.verbose == 0:
-                print(msg)
+                print msg
             else:
-                print(ret)
-        except ActionFailedException as e:
+                print ret
+        except ActionFailedException, e:
             sys.stderr.write('Server Error: %s\n' % e.what())
             if opts.verbose >0:
-                print(e.dwhat())
+                print e.dwhat()
             sys.exit(1)
     else:
         parser.error('Unknown action: %s' % args[0])
