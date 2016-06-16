@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # Filename:      paste
 # Purpose:       XmlRpc interface client to paste.debian.net
 # Author:        Michael Gebetsroither <michael@mgeb.org>
@@ -12,17 +12,17 @@ import inspect
 import getpass
 
 # program defaults
-DEFAULT_SERVER='http://paste.debian.net/server.pl'
+DEFAULT_SERVER = 'http://paste.debian.net/server.pl'
 
 class ActionFailedException(Exception):
-    '''Thrown if server returned an error'''
+    # Thrown if server returned an error
     def __init__(self, errormsg, ret):
         Exception.__init__(self, errormsg, ret)
     def what(self):
-        '''Get errormessage'''
+        # Get error message
         return self.args[0]
     def dwhat(self):
-        '''Get more verbose errormessage'''
+        # Get more verbose errormessage
         return self.args[1]
 
 
@@ -45,12 +45,12 @@ class Action(object):
         return ret
 
     def call(self, method_name):
-        '''External Interface to call the appropriate action'''
+        # External Interface to call the appropriate action
         return self.__getattribute__(method_name)()
 
     def actionAddPaste(self):
-        '''Add paste to the server: <1.line> <2.line> ...
-
+        '''
+        Add paste to the server: <1.line> <2.line> ...
         default     Read paste from stdin.
         [text]      Every argument on the commandline will be interpreted as
                     a seperate line of paste.
@@ -66,7 +66,8 @@ class Action(object):
         return (result['statusmessage'], result)
 
     def actionDelPaste(self):
-        '''Delete paste from server: <digest>
+        '''
+        Delete paste from server: <digest>
 
         <digest>    Digest of paste you want to remove.
         '''
@@ -75,7 +76,8 @@ class Action(object):
         return (result['statusmessage'], result)
 
     def actionGetPaste(self):
-        '''Get paste from server: <id>
+        '''
+        Get paste from server: <id>
 
         <id>        Id of paste you want to receive.
         '''
@@ -84,12 +86,13 @@ class Action(object):
         return (result['code'], result)
 
     def actionGetLangs(self):
-        '''Get supported language highlighting types from server'''
+        # Get supported language highlighting types from server
         result = self._callProxy(lambda s: s.paste.getLanguages())
         return ('\n'.join(result['langs']), result)
 
     def actionAddShortUrl(self):
-        '''Add short-URL: <url>
+        '''
+        Add short-URL: <url>
 
         <url>        Short-URL to add
         '''
@@ -98,7 +101,8 @@ class Action(object):
         return (result['url'], result)
 
     def actionGetShortUrl(self):
-        '''Resolve short-URL: <url>
+        '''
+        Resolve short-URL: <url>
 
         <url>        Short-URL to get clicks of
         '''
@@ -107,7 +111,8 @@ class Action(object):
         return (result['url'], result)
 
     def actionGetShortUrlClicks(self):
-        '''Get clicks of short-URL: <url>
+        '''
+        Get clicks of short-URL: <url>
 
         <url>        Short-URL to get clicks of
         '''
