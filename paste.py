@@ -78,9 +78,13 @@ class Action(object):
 
         <digest>    Digest of paste you want to remove.
         '''
-        digest = self.args_.pop(0)
-        result = self._callProxy(lambda s: s.paste.deletePaste(digest))
-        return (result['statusmessage'], result)
+        try:
+            digest = self.args_.pop(0)
+            result = self._callProxy(lambda s: s.paste.deletePaste(digest))
+            return (result['statusmessage'], result)
+        except:
+            parser.error("Please provide me with a valid digest")
+            exit(1)
 
     def actionGetPaste(self):
         '''
@@ -88,9 +92,13 @@ class Action(object):
 
         <id>        Id of paste you want to receive.
         '''
-        id = self.args_.pop(0)
-        result = self._callProxy(lambda s: s.paste.getPaste(id))
-        return (result['code'], result)
+        try:
+            id = self.args_.pop(0)
+            result = self._callProxy(lambda s: s.paste.getPaste(id))
+            return (result['code'], result)
+        except:
+            parser.error("Please provide me with a paste ID")
+            exit(1)
 
     def actionGetLangs(self):
         '''
@@ -105,9 +113,13 @@ class Action(object):
 
         <url>        Short-URL to add
         '''
-        url = self.args_.pop(0)
-        result = self._callProxy(lambda s: s.paste.addShortURL(url))
-        return (result['url'], result)
+        try:
+            url = self.args_.pop(0)
+            result = self._callProxy(lambda s: s.paste.addShortURL(url))
+            return (result['url'], result)
+        except:
+            parser.error("Please provide me with a valid short URL")
+            exit(1)
 
     def actionGetShortUrl(self):
         '''
@@ -120,8 +132,7 @@ class Action(object):
             result = self._callProxy(lambda s: s.paste.resolveShortURL(url))
             return (result['url'], result)
         except:
-            parser.error("Error: Please provide me with a valid short URL")
-            # TODO: Find a better way to write this, like when running without arguments
+            parser.error("Please provide me with a valid short URL")
             exit(1)
         
 
@@ -131,9 +142,13 @@ class Action(object):
 
         <url>        Short-URL to get clicks of
         '''
-        url = self.args_.pop(0)
-        result = self._callProxy(lambda s: s.paste.ShortURLClicks(url))
-        return (result['count'], result)
+        try:
+            url = self.args_.pop(0)
+            result = self._callProxy(lambda s: s.paste.ShortURLClicks(url))
+            return (result['count'], result)
+        except:
+            parser.error("Please provide me with a valid short URL")
+            exit(1)
 
     def actionHelp(self):
         '''
@@ -144,6 +159,7 @@ class Action(object):
         if len(self.args_) < 1:
             alias = "help"
         else:
+
             alias = self.args_.pop(0)
 
         if alias in actions:
