@@ -1,0 +1,197 @@
+--- old-paste.py	2016-06-17 11:22:53.306643239 +0200
++++ paste.py	2016-06-17 11:45:38.649239503 +0200
+@@ -1,8 +1,11 @@
+-#!/usr/bin/python
+-# Filename:      paste
+-# Purpose:       XmlRpc interface client to paste.debian.net
+-# Author:        Copyright (C) 2007-2011 Michael Gebetsroither <michael@mgeb.org>
+-# License:       This file is licensed under the GPL v2+. Full license text in LICENSE
++#!/usr/bin/python3
++# Filename:                                paste
++# Purpose:                                 XmlRpc interface client to paste.debian.net
++# Original code by:                        Copyright 2007-2011 Michael Gebetsroither <michael@mgeb.org>
++# Author of this fork (AoF):               Copyright 2016 Github user bvanrijn, <b.vanrijn@me.com>
++# License:                                 This file is licensed under the GPL v2+. Full license text in LICENSE
++# Modified original:                       Yes, I forked the repository at commit 8adff71 and modified it
++# AoF started working on modified version: Thu Jun 16 21:08:56 2016 +0200
+ #
+ # This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ # This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+@@ -10,23 +13,23 @@
+ ################################################################################
+ 
+ import sys
+-import xmlrpclib
++import xmlrpc.client
+ import optparse
+ import inspect
+ import getpass
+ 
+ # program defaults
+-DEFAULT_SERVER='http://paste.debian.net/server.pl'
++DEFAULT_SERVER = 'http://paste.debian.net/server.pl'
+ 
+ class ActionFailedException(Exception):
+-    '''Thrown if server returned an error'''
++    # Thrown if server returned an error
+     def __init__(self, errormsg, ret):
+         Exception.__init__(self, errormsg, ret)
+     def what(self):
+-        '''Get errormessage'''
++        # Get error message
+         return self.args[0]
+     def dwhat(self):
+-        '''Get more verbose errormessage'''
++        # Get more verbose errormessage
+         return self.args[1]
+ 
+ 
+@@ -36,7 +39,7 @@
+         self.opts_ = opts
+ 
+     def _createProxy(self):
+-        return xmlrpclib.ServerProxy(self.opts_.server, verbose=False)
++        return xmlrpc.client.ServerProxy(self.opts_.server, verbose=False)
+ 
+     def _callProxy(self, functor, server=None):
+         '''Wrapper for xml-rpc calls to server which throws an
+@@ -49,12 +52,12 @@
+         return ret
+ 
+     def call(self, method_name):
+-        '''External Interface to call the appropriate action'''
++        # External Interface to call the appropriate action
+         return self.__getattribute__(method_name)()
+ 
+     def actionAddPaste(self):
+-        '''Add paste to the server: <1.line> <2.line> ...
+-
++        '''
++        Add paste to the server: <1.line> <2.line> ...
+         default     Read paste from stdin.
+         [text]      Every argument on the commandline will be interpreted as
+                     a seperate line of paste.
+@@ -70,7 +73,8 @@
+         return (result['statusmessage'], result)
+ 
+     def actionDelPaste(self):
+-        '''Delete paste from server: <digest>
++        '''
++        Delete paste from server: <digest>
+ 
+         <digest>    Digest of paste you want to remove.
+         '''
+@@ -79,7 +83,8 @@
+         return (result['statusmessage'], result)
+ 
+     def actionGetPaste(self):
+-        '''Get paste from server: <id>
++        '''
++        Get paste from server: <id>
+ 
+         <id>        Id of paste you want to receive.
+         '''
+@@ -88,12 +93,15 @@
+         return (result['code'], result)
+ 
+     def actionGetLangs(self):
+-        '''Get supported language highlighting types from server'''
++        '''
++        Get supported language highlighting types from server
++        '''
+         result = self._callProxy(lambda s: s.paste.getLanguages())
+         return ('\n'.join(result['langs']), result)
+ 
+     def actionAddShortUrl(self):
+-        '''Add short-URL: <url>
++        '''
++        Add short-URL: <url>
+ 
+         <url>        Short-URL to add
+         '''
+@@ -102,7 +110,8 @@
+         return (result['url'], result)
+ 
+     def actionGetShortUrl(self):
+-        '''Resolve short-URL: <url>
++        '''
++        Resolve short-URL: <url>
+ 
+         <url>        Short-URL to get clicks of
+         '''
+@@ -111,7 +120,8 @@
+         return (result['url'], result)
+ 
+     def actionGetShortUrlClicks(self):
+-        '''Get clicks of short-URL: <url>
++        '''
++        Get clicks of short-URL: <url>
+ 
+         <url>        Short-URL to get clicks of
+         '''
+@@ -120,7 +130,8 @@
+         return (result['count'], result)
+ 
+     def actionHelp(self):
+-        '''Print more verbose help about specific action: <action>
++        '''
++        Print more verbose help about specific action: <action>
+ 
+         <action>    Topic on which you need more verbose help.
+         '''
+@@ -131,10 +142,10 @@
+ 
+         if alias in actions:
+             fun = actions[alias]
+-            print inspect.getdoc(self.__getattribute__(fun))
+-            print "\naliase: " + " ".join([i for i in actions_r[fun] if i != alias])
++            print(inspect.getdoc(self.__getattribute__(fun)))
++            print("\nalias: " + " ".join([i for i in actions_r[fun] if i != alias]))
+         else:
+-            print "Error: No such command - %s" % (alias)
++            print("Error: No such command - %s" % (alias))
+             OPT_PARSER.print_usage()
+         sys.exit(0)
+ 
+@@ -161,19 +172,19 @@
+                    'actionAddShortUrl addurl',
+                    'actionGetShortUrl geturl',
+                    'actionGetShortUrlClicks getclicks',
+-                   'actionHelp     help']
++                   'actionHelp help']
+     for i in action_spec:
+         aliases = i.split()
+         cmd = aliases.pop(0)
+         actions_r[cmd] = aliases
+-    for (k,v) in actions_r.items():
++    for (k,v) in list(actions_r.items()):
+         for i in v:
+             actions[i] = k
+ 
+     usage = "usage: %prog [options] ACTION <args>\n\n" +\
+             "actions:\n" +\
+-            "\n".join(["%12s\t%s" % (v[0], inspect.getdoc(getattr(Action, k)).split('\n')[0]) \
+-                for (k,v) in actions_r.items()])
++            "\n".join(["%12s\t%s" % (v[0], str(inspect.getdoc(getattr(Action, k))).split('\n')[0]) \
++                for (k,v) in list(actions_r.items())])
+     running_user = getpass.getuser()
+     parser = optparse.OptionParser(usage=usage)
+     parser.add_option('-n', '--name', default=running_user, help="Name of poster")
+@@ -196,13 +207,13 @@
+         try:
+             (msg, ret) = action.call(actions[cmd])
+             if opts.verbose == 0:
+-                print msg
++                print(msg)
+             else:
+-                print ret
+-        except ActionFailedException, e:
++                print(ret)
++        except ActionFailedException as e:
+             sys.stderr.write('Server Error: %s\n' % e.what())
+             if opts.verbose >0:
+-                print e.dwhat()
++                print(e.dwhat())
+             sys.exit(1)
+     else:
+         parser.error('Unknown action: %s' % args[0])
