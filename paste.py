@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-# Filename:      paste
-# Purpose:       XmlRpc interface client to paste.debian.net
-# Author:        Michael Gebetsroither <michael@mgeb.org>
-# License:       This file is licensed under the GPL v2+.
+# Filename:                                paste
+# Purpose:                                 XmlRpc interface client to paste.debian.net
+# Original code by:                        Michael Gebetsroither <michael@mgeb.org>
+# Author of this fork (AoF):               Github user bvanrijn
+# License:                                 This file is licensed under the GPL v2+.
+# Modified original:                       Yes
+# AoF started working on modified version: Thu Jun 16 21:08:56 2016 +0200
 ################################################################################
 
 import sys
