@@ -86,7 +86,9 @@ class Action(object):
         return (result['code'], result)
 
     def actionGetLangs(self):
-        # Get supported language highlighting types from server
+        '''
+        Get supported language highlighting types from server
+        '''
         result = self._callProxy(lambda s: s.paste.getLanguages())
         return ('\n'.join(result['langs']), result)
 
@@ -134,7 +136,7 @@ class Action(object):
         if alias in actions:
             fun = actions[alias]
             print(inspect.getdoc(self.__getattribute__(fun)))
-            print("\naliase: " + " ".join([i for i in actions_r[fun] if i != alias]))
+            print("\nalias: " + " ".join([i for i in actions_r[fun] if i != alias]))
         else:
             print("Error: No such command - %s" % (alias))
             OPT_PARSER.print_usage()
