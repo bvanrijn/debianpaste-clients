@@ -4,6 +4,8 @@ debianpaste-clients is a Python client for [Debian Pastezone](https://paste.debi
 
 The original code is included as `old-paste.py`, or in the [gebi/debianpaste-clients](https://github.com/gebi/debianpaste-clients) repository. For a full list of changes, please refer to the [list of commits](https://github.com/bvanrijn/debianpaste-clients/commits).
 
+Please read the license text (available in the LICENSE file) of this software _before_ using the program.
+
 ## Thanks
 
 1. Micheal Gebetsroither for building debianpaste-clients

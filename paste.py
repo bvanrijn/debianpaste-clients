@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 # Filename:                                paste
 # Purpose:                                 XmlRpc interface client to paste.debian.net
-# Original code by:                        Michael Gebetsroither <michael@mgeb.org>
-# Author of this fork (AoF):               Github user bvanrijn
-# License:                                 This file is licensed under the GPL v2+.
+# Original code by:                        Copyright 2007-2011 Michael Gebetsroither <michael@mgeb.org>
+# Author of this fork (AoF):               Copyright 2016 Github user bvanrijn, <b.vanrijn@me.com>
+# License:                                 This file is licensed under the GPL v2+. Full license text in LICENSE
 # Modified original:                       Yes
 # AoF started working on modified version: Thu Jun 16 21:08:56 2016 +0200
+#
+# This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 ################################################################################
 
 import sys
@@ -168,7 +172,7 @@ if __name__ == "__main__":
                    'actionAddShortUrl addurl',
                    'actionGetShortUrl geturl',
                    'actionGetShortUrlClicks getclicks',
-                   'actionHelp     help']
+                   'actionHelp help']
     for i in action_spec:
         aliases = i.split()
         cmd = aliases.pop(0)
