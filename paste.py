@@ -120,7 +120,7 @@ class Action(object):
             result = self._callProxy(lambda s: s.paste.resolveShortURL(url))
             return (result['url'], result)
         except:
-            print("Error: Please provide me with a valid short URL")
+            parser.error("Error: Please provide me with a valid short URL")
             # TODO: Find a better way to write this, like when running without arguments
             exit(1)
         
