@@ -7,4 +7,4 @@ The original code is included as `old-paste.py`, or in the [gebi/debianpaste-cli
 ## Thanks
 
 1. Micheal Gebetsroither for building debianpaste-clients
-2. [This bug on Chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=621022) for the issue template
+2. [This bug on Chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=621022) for the [issue template](https://github.com/bvanrijn/debianpaste-clients/issues/1)
