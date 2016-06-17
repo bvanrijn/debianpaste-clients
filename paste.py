@@ -191,10 +191,10 @@ if __name__ == "__main__":
                    'actionDelPaste del d rm',
                    'actionGetPaste get g',
                    'actionGetLangs getlangs gl langs l',
-                   'actionAddShortUrl addurl',
-                   'actionGetShortUrl geturl',
-                   'actionGetShortUrlClicks getclicks',
-                   'actionHelp help']
+                   'actionAddShortUrl addurl au',
+                   'actionGetShortUrl geturl gu',
+                   'actionGetShortUrlClicks getclicks gc',
+                   'actionHelp help h']
     for i in action_spec:
         aliases = i.split()
         cmd = aliases.pop(0)
