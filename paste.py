@@ -115,9 +115,15 @@ class Action(object):
 
         <url>        Short-URL to get clicks of
         '''
-        url = self.args_.pop(0)
-        result = self._callProxy(lambda s: s.paste.resolveShortURL(url))
-        return (result['url'], result)
+        try:
+            url = self.args_.pop(0)
+            result = self._callProxy(lambda s: s.paste.resolveShortURL(url))
+            return (result['url'], result)
+        except:
+            print("Error: Please provide me with a valid short URL")
+            # TODO: Find a better way to write this, like when running without arguments
+            exit(1)
+        
 
     def actionGetShortUrlClicks(self):
         '''
@@ -147,7 +153,7 @@ class Action(object):
         else:
             print("Error: No such command - %s" % (alias))
             OPT_PARSER.print_usage()
-        sys.exit(0)
+        exit(0)
 
 
 # actionAddPaste -> [add, a]
@@ -214,6 +220,6 @@ if __name__ == "__main__":
             sys.stderr.write('Server Error: %s\n' % e.what())
             if opts.verbose >0:
                 print(e.dwhat())
-            sys.exit(1)
+            exit(1)
     else:
         parser.error('Unknown action: %s' % args[0])

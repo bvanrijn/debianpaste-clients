@@ -1,0 +1,801 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"la",
+				"last_ping"
+			],
+			[
+				"get",
+				"getElementsByClassName"
+			],
+			[
+				"s",
+				"subscript	subscript ..."
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"P",
+				"PICTURE	Tag"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "changes.patch",
+			"settings":
+			{
+				"buffer_size": 7408,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n	\"auto_complete\":\n	{\n		\"selected_items\":\n		[\n			[\n				\"la\",\n				\"last_ping\"\n			],\n			[\n				\"get\",\n				\"getElementsByClassName\"\n			],\n			[\n				\"s\",\n				\"subscript	subscript ...\"\n			],\n			[\n				\"bac\",\n				\"background-size\"\n			],\n			[\n				\"P\",\n				\"PICTURE	Tag\"\n			],\n			[\n				\"for\",\n				\"for	for (…) {…}\"\n			]\n		]\n	},\n	\"buffers\":\n	[\n	],\n	\"build_system\": \"\",\n	\"build_system_choices\":\n	[\n	],\n	\"build_varint\": \"\",\n	\"command_palette\":\n	{\n		\"height\": 392.0,\n		\"last_filter\": \"\",\n		\"selected_items\":\n		[\n			[\n				\"project\",\n				\"Project: Save As\"\n			],\n			[\n				\"ppr\",\n				\"Package Control: Remove Package\"\n			],\n			[\n				\"ppi\",\n				\"Package Control: Install Package\"\n			],\n			[\n				\"PPI\",\n				\"Package Control: Install Package\"\n			],\n			[\n				\"sspy\",\n				\"Set Syntax: Python\"\n			],\n			[\n				\"ssjs\",\n				\"Set Syntax: JavaScript\"\n			],\n			[\n				\"ssjson\",\n				\"Set Syntax: JSON\"\n			],\n			[\n				\"bash\",\n				\"Set Syntax: Shell Script (Bash)\"\n			],\n			[\n				\"minimap\",\n				\"View: Toggle Minimap\"\n			],\n			[\n				\"pp i \",\n				\"Package Control: Install Package\"\n			],\n			[\n				\"pp i\",\n				\"Package Control: Install Package\"\n			],\n			[\n				\"ssh\",\n				\"Set Syntax: HTML\"\n			],\n			[\n				\"ssrus\",\n				\"Set Syntax: Rust\"\n			],\n			[\n				\"ssj\",\n				\"Set Syntax: JSON\"\n			],\n			[\n				\"ppre\",\n				\"Package Control: Remove Package\"\n			],\n			[\n				\"pp\",\n				\"Package Control: Remove Package\"\n			],\n			[\n				\"\",\n				\"Package Control: Install Package\"\n			],\n			[\n				\"ssp\",\n				\"Set Syntax: Python\"\n			],\n			[\n				\"ssb\",\n				\"Set Syntax: Shell Script (Bash)\"\n			],\n			[\n				\"ruby\",\n				\"Set Syntax: Ruby\"\n			],\n			[\n				\"sshtml\",\n				\"Set Syntax: HTML\"\n			],\n			[\n				\"plain\",\n				\"Set Syntax: Plain Text\"\n			],\n			[\n				\"sss\",\n				\"Set Syntax: Swift\"\n			],\n			[\n				\"SS\",\n				\"Set Syntax: Lisp\"\n			],\n			[\n				\"SSC\",\n				\"Set Syntax: C\"\n			],\n			[\n				\"SSS\",\n				\"Set Syntax: Swift\"\n			],\n			[\n				\"pc r\",\n				\"Package Control: Remove Channel\"\n			],\n			[\n				\"ssbash\",\n				\"Set Syntax: Shell Script (Bash)\"\n			],\n			[\n				\"pc i\",\n				\"Package Control: Install Package\"\n			],\n			[\n				\"package i\",\n				\"Package Control: Install Package\"\n			],\n			[\n				\"sssw\",\n				\"Set Syntax: Swift\"\n			],\n			[\n				\"package control r\",\n				\"Package Control: Remove Package\"\n			],\n			[\n				\"package control i\",\n				\"Package Control: Install Package\"\n			],\n			[\n				\"ssht\",\n				\"Set Syntax: HTML\"\n			],\n			[\n				\"sscss\",\n				\"Set Syntax: CSS\"\n			],\n			[\n				\"ssc++\",\n				\"Set Syntax: C++\"\n			],\n			[\n				\"package control install\",\n				\"Package Control: Install Package\"\n			],\n			[\n				\"package\",\n				\"Preferences: Browse Packages\"\n			]\n		],\n		\"width\": 485.0\n	},\n	\"console\":\n	{\n		\"height\": 518.0,\n		\"history\":\n		[\n			\"import __hello__\",\n			\"import requests\",\n			\"exit()\",\n			\"random.randint(1, 100)\",\n			\"import random\",\n			\"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)\"\n		]\n	},\n	\"distraction_free\":\n	{\n		\"menu_visible\": true,\n		\"show_minimap\": false,\n		\"show_open_files\": false,\n		\"show_tabs\": false,\n		\"side_bar_visible\": false,\n		\"status_bar_visible\": false\n	},\n	\"file_history\":\n	[\n		\"/home/barend/Desktop/python/booleans-python/booleans.py\",\n		\"/home/barend/Desktop/python/booleans-python/u-booleans.py\",\n		\"/home/barend/.config/sublime-text-3/Packages/User/Gist.sublime-settings\",\n		\"/home/barend/.config/sublime-text-3/Packages/Gist/Gist.sublime-settings\",\n		\"/home/barend/Desktop/python/booleans-python/requirements.txt\",\n		\"/home/barend/Desktop/python/booleans-python/LICENSE\",\n		\"/home/barend/Desktop/python/booleans-python/README.md\",\n		\"/home/barend/Desktop/python/booleans-python/booleans.pyc\",\n		\"/home/barend/Desktop/python/debianpaste-clients/paste.py\",\n		\"/home/barend/Desktop/python/debianpaste-clients/old-paste.py\",\n		\"/home/barend/Desktop/python/debianpaste-clients/README.md\",\n		\"/home/barend/Desktop/python/debianpaste-clients/TODO\",\n		\"/home/barend/Desktop/python/debianpaste-clients/LICENSE\",\n		\"/home/barend/Desktop/python/booleans-python/.gitignore\",\n		\"/home/barend/Projects/shrugsbot/bot.py\",\n		\"/home/barend/Projects/bot-status/status.py\",\n		\"/home/barend/Desktop/python/fuzzy/fuzzy.py\",\n		\"/home/barend/Desktop/c/hello.c\",\n		\"/home/barend/Desktop/python/fuzzy.py\",\n		\"/home/barend/Projects/bot-status/bot-template.py\",\n		\"/home/barend/Desktop/python/cmpny.py\",\n		\"/home/barend/Desktop/python/vagrant-did-you-mean/vagrant.py\",\n		\"/home/barend/Desktop/website/overtexting/index.html\",\n		\"/home/barend/.vimrc\",\n		\"/home/barend/Desktop/python/abusemailer.py\",\n		\"/home/barend/file-exists-cli.sh\",\n		\"/home/barend/Desktop/python/gps-new.py\",\n		\"/home/barend/Desktop/python/MyFriendCatherine.py\",\n		\"/tmp/file-exists.sh\",\n		\"/tmp/hello.js\",\n		\"/tmp/server.js\",\n		\"/home/barend/vagrant/webserver/Vagrantfile\",\n		\"/home/barend/Desktop/python/longstorytweet.py\",\n		\"/home/barend/Desktop/website/overtexting/beautifulcolors-auto.html\",\n		\"/home/barend/Desktop/website/overtexting/beautifulcolors.html\",\n		\"/home/barend/.config/sublime-text-3/Packages/User/Preferences.sublime-settings\",\n		\"/home/barend/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap\",\n		\"/home/barend/Desktop/ABP - Personal Annoyances.txt\",\n		\"/home/barend/.toprc\",\n		\"/home/barend/Desktop/python/list.py\",\n		\"/home/barend/Desktop/python/sort.py\",\n		\"/home/barend/Desktop/python/fizzbuzz.py\",\n		\"/home/barend/Desktop/python/euler/6.py\",\n		\"/home/barend/Desktop/python/euler/13.py\",\n		\"/home/barend/Desktop/python/euler/9.py\",\n		\"/home/barend/Projects/bot-status-dev/bot-template.py\",\n		\"/home/barend/Projects/bot-status-dev/status.py\",\n		\"/home/barend/.config/sublime-text-3/Packages/GitGutter/GitGutter.sublime-settings\",\n		\"/home/barend/Desktop/python/btu-dev.py\",\n		\"/home/barend/Desktop/python/btu.py\",\n		\"/home/barend/Desktop/python/enviar/enviar-nox.py\",\n		\"/home/barend/Desktop/python/entropy_avail.py\",\n		\"/home/barend/Desktop/website/awesome/public/index.html\",\n		\"/home/barend/Desktop/website/github-pages/human/human.styl\",\n		\"/home/barend/Desktop/do-tut/How To Set Up A Minecraft Server On Ubuntu 14.04/How To Set Up A Minecraft Server On Ubuntu 14.04.md\",\n		\"/home/barend/Desktop/tor-browser_en-US/Browser/dictionaries/en-US.dic\",\n		\"/home/barend/Desktop/tor-browser_en-US/Browser/dictionaries/en-US.aff\",\n		\"/tmp/fz3temp-1/index.html\",\n		\"/tmp/netcat/netcat-1.10/Makefile\",\n		\"/tmp/netcat/netcat-1.10/netcat.c\",\n		\"/home/barend/Desktop/gepr/index.js\",\n		\"/home/barend/Desktop/python/https/https.py\",\n		\"/home/barend/Desktop/python/api/api.py\",\n		\"/home/barend/Desktop/node-js/https/https.js\",\n		\"/home/barend/Desktop/rust/1.rs\",\n		\"/home/barend/Desktop/rust/rustacean.rs\",\n		\"/home/barend/Desktop/rust/hello.rs\",\n		\"/home/barend/Desktop/hermes/rtv.py\",\n		\"/home/barend/Desktop/hermes/test.py\",\n		\"/home/barend/Downloads/ad_unit176528.txt\",\n		\"/home/barend/Desktop/website/smv0.co.nf/index.html\",\n		\"/home/barend/Desktop/website/smv0.co.nf/site.styl\",\n		\"/home/barend/Desktop/website/smv0.co.nf/site.\",\n		\"/home/barend/Desktop/website/smv0.co.nf/style.styl\",\n		\"/home/barend/Desktop/website/human/human.styl\",\n		\"/home/barend/Desktop/website/mv\",\n		\"/home/barend/Desktop/website/smv0.co.nf/.flex\",\n		\"/home/barend/Desktop/website/human/site.styl\",\n		\"/home/barend/Desktop/website/smv0.co.nf/index.new.html\",\n		\"/home/barend/Downloads/a\",\n		\"/home/barend/Desktop/website/human/index.html\",\n		\"/home/barend/Desktop/website/human/human.css\",\n		\"/home/barend/Desktop/website/simple-text/index.html\",\n		\"/home/barend/Desktop/website/simple-text/style.styl\",\n		\"/home/barend/.zshrc\",\n		\"/home/barend/Desktop/website/grid.css/grid.styl\",\n		\"/home/barend/Desktop/website/simple-text/style.css\",\n		\"/home/barend/Desktop/node-js/buffer.js\",\n		\"/home/barend/.node_repl_history\",\n		\"/home/barend/Desktop/node-js/events.js\",\n		\"/home/barend/Desktop/node-js/streamfile.js\",\n		\"/home/barend/Desktop/node-js/hello.js\",\n		\"/home/barend/Desktop/node-js/server.js\",\n		\"/home/barend/Desktop/node-js/readfile.js\",\n		\"/home/barend/Desktop/node-js/system-info.js\",\n		\"/home/barend/Desktop/node-js/lorem.txt\",\n		\"/home/barend/Desktop/node-js/random.js\",\n		\"/home/barend/Desktop/swift-vs-python/fibonacci.swift\",\n		\"/home/barend/Desktop/website/awesome/firebase.json\",\n		\"/home/barend/Desktop/python/shortest-http-request-ever.py\",\n		\"/home/barend/Desktop/python/vowels.py\",\n		\"/home/barend/simplewriter/index.html\",\n		\"/home/barend/iculture-api/postsfinder.py\",\n		\"/home/barend/iculture-api/command\",\n		\"/home/barend/Desktop/website/awesome/public/firebase.json\",\n		\"/home/barend/Desktop/website/awesome/index.html\",\n		\"/home/barend/Desktop/python/game.py\",\n		\"/home/barend/Desktop/python/iculture.py\",\n		\"/home/barend/Desktop/python/applescrape/script.py\",\n		\"/home/barend/iculture-api/json\",\n		\"/home/barend/Desktop/website/pageloadfast/index.html\",\n		\"/home/barend/Desktop/python/y2038.py\",\n		\"/home/barend/Desktop/python/millenium.py\",\n		\"/home/barend/xfce/Vagrantfile\",\n		\"/home/barend/Desktop/website/awesome/bootstrap.min.js\",\n		\"/home/barend/Desktop/website/awesome/bootstrap.min.js.bak\",\n		\"/home/barend/Desktop/website/awesome/jquery.min.js\",\n		\"/home/barend/Desktop/python/openshiftuptime.py\",\n		\"/home/barend/Desktop/puzzles/help\",\n		\"/home/barend/Desktop/website/pageloadfast/index.htlm\",\n		\"/home/barend/Desktop/website/gorgeous-blog/index.html\",\n		\"/home/barend/Desktop/website/gorgeous-blog/index.fast.html\",\n		\"/home/barend/Desktop/website/gorgeous-blog/untitled.html\",\n		\"/home/barend/vagrantfiles/swift/Vagrantfile\",\n		\"/home/barend/VagrantfileXFCE\",\n		\"/home/barend/swiftvagrant/swift/Vagrantfile\",\n		\"/home/barend/Desktop/python/xkcd-python/download.py\",\n		\"/home/barend/Desktop/python/xkcd-python/templates/comic.html\"\n	],\n	\"find\":\n	{\n		\"height\": 28.0\n	},\n	\"find_in_files\":\n	{\n		\"height\": 96.0,\n		\"where_history\":\n		[\n		]\n	},\n	\"find_state\":\n	{\n		\"case_sensitive\": false,\n		\"find_history\":\n		[\n			\"```\",\n			\"getlangs\",\n			\"aliase\",\n			\"usage\",\n			\">>> \",\n			\"\\\"\",\n			\"[\",\n			\"  \",\n			\"150\",\n			\"'\",\n			\" \",\n			\"varc\",\n			\"var\",\n			\"col-xs-12\",\n			\"/*\",\n			\"1\",\n			\"\\\"})\",\n			\" \",\n			\"50px\",\n			\"'\",\n			\">/\",\n			\"sudo\",\n			\"t\",\n			\"comic\",\n			\"{%\",\n			\"%}\",\n			\"Comic\",\n			\"\\\"'\\\"\",\n			\"\\\"'\\\")\\n\",\n			\"'\",\n			\"\\\")\",\n			\">>> \",\n			\"`\",\n			\"+\",\n			\".\",\n			\",\",\n			\":\",\n			\";\",\n			\".\",\n			\"#\",\n			\"@\",\n			\">>> \",\n			\"and\",\n			\"==\",\n			\"i \",\n			\"0000\",\n			\"bottom\",\n			\"left\",\n			\"n\",\n			\"40755\",\n			\"return\",\n			\"  \",\n			\"   \",\n			\"    \",\n			\"if\",\n			\"scroll\",\n			\"'\",\n			\",\"\n		],\n		\"highlight\": true,\n		\"in_selection\": false,\n		\"preserve_case\": false,\n		\"regex\": false,\n		\"replace_history\":\n		[\n			\"Abel\"\n		],\n		\"reverse\": false,\n		\"show_context\": true,\n		\"use_buffer2\": true,\n		\"whole_word\": false,\n		\"wrap\": true\n	},\n	\"groups\":\n	[\n		{\n			\"sheets\":\n			[\n			]\n		}\n	],\n	\"incremental_find\":\n	{\n		\"height\": 28.0\n	},\n	\"input\":\n	{\n		\"height\": 36.0\n	},\n	\"layout\":\n	{\n		\"cells\":\n		[\n			[\n				0,\n				0,\n				1,\n				1\n			]\n		],\n		\"cols\":\n		[\n			0.0,\n			1.0\n		],\n		\"rows\":\n		[\n			0.0,\n			1.0\n		]\n	},\n	\"menu_visible\": true,\n	\"output.find_results\":\n	{\n		\"height\": 0.0\n	},\n	\"pinned_build_system\": \"\",\n	\"project\": \"changes.sublime-project\",\n	\"replace\":\n	{\n		\"height\": 52.0\n	},\n	\"save_all_on_build\": true,\n	\"select_file\":\n	{\n		\"height\": 0.0,\n		\"last_filter\": \"\",\n		\"selected_items\":\n		[\n		],\n		\"width\": 0.0\n	},\n	\"select_project\":\n	{\n		\"height\": 500.0,\n		\"last_filter\": \"\",\n		\"selected_items\":\n		[\n		],\n		\"width\": 380.0\n	},\n	\"select_symbol\":\n	{\n		\"height\": 0.0,\n		\"last_filter\": \"\",\n		\"selected_items\":\n		[\n		],\n		\"width\": 0.0\n	},\n	\"selected_group\": 0,\n	\"settings\":\n	{\n	},\n	\"show_minimap\": true,\n	\"show_open_files\": true,\n	\"show_tabs\": true,\n	\"side_bar_visible\": false,\n	\"side_bar_width\": 150.0,\n	\"status_bar_visible\": true,\n	\"template_settings\":\n	{\n	}\n}\n",
+			"file": "changes.sublime-workspace",
+			"file_size": 12136,
+			"file_write_time": 131106554778000278,
+			"settings":
+			{
+				"buffer_size": 12132,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "LICENSE",
+			"settings":
+			{
+				"buffer_size": 18091,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "old-paste.py",
+			"settings":
+			{
+				"buffer_size": 7602,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "paste.py",
+			"settings":
+			{
+				"buffer_size": 8008,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{}",
+			"file": "paste.sublime-workspace",
+			"file_size": 2,
+			"file_write_time": 131106555071185892,
+			"settings":
+			{
+				"buffer_size": 2,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 805,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"ppr",
+				"Package Control: Remove Package"
+			],
+			[
+				"ppi",
+				"Package Control: Install Package"
+			],
+			[
+				"PPI",
+				"Package Control: Install Package"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"minimap",
+				"View: Toggle Minimap"
+			],
+			[
+				"pp i ",
+				"Package Control: Install Package"
+			],
+			[
+				"pp i",
+				"Package Control: Install Package"
+			],
+			[
+				"ssh",
+				"Set Syntax: HTML"
+			],
+			[
+				"ssrus",
+				"Set Syntax: Rust"
+			],
+			[
+				"ssj",
+				"Set Syntax: JSON"
+			],
+			[
+				"ppre",
+				"Package Control: Remove Package"
+			],
+			[
+				"pp",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"ssb",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"sss",
+				"Set Syntax: Swift"
+			],
+			[
+				"SS",
+				"Set Syntax: Lisp"
+			],
+			[
+				"SSC",
+				"Set Syntax: C"
+			],
+			[
+				"SSS",
+				"Set Syntax: Swift"
+			],
+			[
+				"pc r",
+				"Package Control: Remove Channel"
+			],
+			[
+				"ssbash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"pc i",
+				"Package Control: Install Package"
+			],
+			[
+				"package i",
+				"Package Control: Install Package"
+			],
+			[
+				"sssw",
+				"Set Syntax: Swift"
+			],
+			[
+				"package control r",
+				"Package Control: Remove Package"
+			],
+			[
+				"package control i",
+				"Package Control: Install Package"
+			],
+			[
+				"ssht",
+				"Set Syntax: HTML"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			],
+			[
+				"ssc++",
+				"Set Syntax: C++"
+			],
+			[
+				"package control install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 518.0,
+		"history":
+		[
+			"import __hello__",
+			"import requests",
+			"exit()",
+			"random.randint(1, 100)",
+			"import random",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/barend/Desktop/python/debianpaste-clients/TODO",
+		"/home/barend/Desktop/python/booleans-python/requirements.txt",
+		"/home/barend/Desktop/python/booleans-python/u-booleans.pyc",
+		"/home/barend/Desktop/python/booleans-python/u-booleans.py",
+		"/home/barend/Desktop/python/booleans-python/README.md",
+		"/home/barend/Desktop/python/booleans-python/LICENSE",
+		"/home/barend/Desktop/python/booleans-python/booleans.py",
+		"/home/barend/.config/sublime-text-3/Packages/User/Gist.sublime-settings",
+		"/home/barend/.config/sublime-text-3/Packages/Gist/Gist.sublime-settings",
+		"/home/barend/Desktop/python/booleans-python/booleans.pyc",
+		"/home/barend/Desktop/python/debianpaste-clients/paste.py",
+		"/home/barend/Desktop/python/debianpaste-clients/old-paste.py",
+		"/home/barend/Desktop/python/debianpaste-clients/README.md",
+		"/home/barend/Desktop/python/debianpaste-clients/LICENSE",
+		"/home/barend/Desktop/python/booleans-python/.gitignore",
+		"/home/barend/Projects/shrugsbot/bot.py",
+		"/home/barend/Projects/bot-status/status.py",
+		"/home/barend/Desktop/python/fuzzy/fuzzy.py",
+		"/home/barend/Desktop/c/hello.c",
+		"/home/barend/Desktop/python/fuzzy.py",
+		"/home/barend/Projects/bot-status/bot-template.py",
+		"/home/barend/Desktop/python/cmpny.py",
+		"/home/barend/Desktop/python/vagrant-did-you-mean/vagrant.py",
+		"/home/barend/Desktop/website/overtexting/index.html",
+		"/home/barend/.vimrc",
+		"/home/barend/Desktop/python/abusemailer.py",
+		"/home/barend/file-exists-cli.sh",
+		"/home/barend/Desktop/python/gps-new.py",
+		"/home/barend/Desktop/python/MyFriendCatherine.py",
+		"/tmp/file-exists.sh",
+		"/tmp/hello.js",
+		"/tmp/server.js",
+		"/home/barend/vagrant/webserver/Vagrantfile",
+		"/home/barend/Desktop/python/longstorytweet.py",
+		"/home/barend/Desktop/website/overtexting/beautifulcolors-auto.html",
+		"/home/barend/Desktop/website/overtexting/beautifulcolors.html",
+		"/home/barend/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/barend/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/barend/Desktop/ABP - Personal Annoyances.txt",
+		"/home/barend/.toprc",
+		"/home/barend/Desktop/python/list.py",
+		"/home/barend/Desktop/python/sort.py",
+		"/home/barend/Desktop/python/fizzbuzz.py",
+		"/home/barend/Desktop/python/euler/6.py",
+		"/home/barend/Desktop/python/euler/13.py",
+		"/home/barend/Desktop/python/euler/9.py",
+		"/home/barend/Projects/bot-status-dev/bot-template.py",
+		"/home/barend/Projects/bot-status-dev/status.py",
+		"/home/barend/.config/sublime-text-3/Packages/GitGutter/GitGutter.sublime-settings",
+		"/home/barend/Desktop/python/btu-dev.py",
+		"/home/barend/Desktop/python/btu.py",
+		"/home/barend/Desktop/python/enviar/enviar-nox.py",
+		"/home/barend/Desktop/python/entropy_avail.py",
+		"/home/barend/Desktop/website/awesome/public/index.html",
+		"/home/barend/Desktop/website/github-pages/human/human.styl",
+		"/home/barend/Desktop/do-tut/How To Set Up A Minecraft Server On Ubuntu 14.04/How To Set Up A Minecraft Server On Ubuntu 14.04.md",
+		"/home/barend/Desktop/tor-browser_en-US/Browser/dictionaries/en-US.dic",
+		"/home/barend/Desktop/tor-browser_en-US/Browser/dictionaries/en-US.aff",
+		"/tmp/fz3temp-1/index.html",
+		"/tmp/netcat/netcat-1.10/Makefile",
+		"/tmp/netcat/netcat-1.10/netcat.c",
+		"/home/barend/Desktop/gepr/index.js",
+		"/home/barend/Desktop/python/https/https.py",
+		"/home/barend/Desktop/python/api/api.py",
+		"/home/barend/Desktop/node-js/https/https.js",
+		"/home/barend/Desktop/rust/1.rs",
+		"/home/barend/Desktop/rust/rustacean.rs",
+		"/home/barend/Desktop/rust/hello.rs",
+		"/home/barend/Desktop/hermes/rtv.py",
+		"/home/barend/Desktop/hermes/test.py",
+		"/home/barend/Downloads/ad_unit176528.txt",
+		"/home/barend/Desktop/website/smv0.co.nf/index.html",
+		"/home/barend/Desktop/website/smv0.co.nf/site.styl",
+		"/home/barend/Desktop/website/smv0.co.nf/site.",
+		"/home/barend/Desktop/website/smv0.co.nf/style.styl",
+		"/home/barend/Desktop/website/human/human.styl",
+		"/home/barend/Desktop/website/mv",
+		"/home/barend/Desktop/website/smv0.co.nf/.flex",
+		"/home/barend/Desktop/website/human/site.styl",
+		"/home/barend/Desktop/website/smv0.co.nf/index.new.html",
+		"/home/barend/Downloads/a",
+		"/home/barend/Desktop/website/human/index.html",
+		"/home/barend/Desktop/website/human/human.css",
+		"/home/barend/Desktop/website/simple-text/index.html",
+		"/home/barend/Desktop/website/simple-text/style.styl",
+		"/home/barend/.zshrc",
+		"/home/barend/Desktop/website/grid.css/grid.styl",
+		"/home/barend/Desktop/website/simple-text/style.css",
+		"/home/barend/Desktop/node-js/buffer.js",
+		"/home/barend/.node_repl_history",
+		"/home/barend/Desktop/node-js/events.js",
+		"/home/barend/Desktop/node-js/streamfile.js",
+		"/home/barend/Desktop/node-js/hello.js",
+		"/home/barend/Desktop/node-js/server.js",
+		"/home/barend/Desktop/node-js/readfile.js",
+		"/home/barend/Desktop/node-js/system-info.js",
+		"/home/barend/Desktop/node-js/lorem.txt",
+		"/home/barend/Desktop/node-js/random.js",
+		"/home/barend/Desktop/swift-vs-python/fibonacci.swift",
+		"/home/barend/Desktop/website/awesome/firebase.json",
+		"/home/barend/Desktop/python/shortest-http-request-ever.py",
+		"/home/barend/Desktop/python/vowels.py",
+		"/home/barend/simplewriter/index.html",
+		"/home/barend/iculture-api/postsfinder.py",
+		"/home/barend/iculture-api/command",
+		"/home/barend/Desktop/website/awesome/public/firebase.json",
+		"/home/barend/Desktop/website/awesome/index.html",
+		"/home/barend/Desktop/python/game.py",
+		"/home/barend/Desktop/python/iculture.py",
+		"/home/barend/Desktop/python/applescrape/script.py",
+		"/home/barend/iculture-api/json",
+		"/home/barend/Desktop/website/pageloadfast/index.html",
+		"/home/barend/Desktop/python/y2038.py",
+		"/home/barend/Desktop/python/millenium.py",
+		"/home/barend/xfce/Vagrantfile",
+		"/home/barend/Desktop/website/awesome/bootstrap.min.js",
+		"/home/barend/Desktop/website/awesome/bootstrap.min.js.bak",
+		"/home/barend/Desktop/website/awesome/jquery.min.js",
+		"/home/barend/Desktop/python/openshiftuptime.py",
+		"/home/barend/Desktop/puzzles/help",
+		"/home/barend/Desktop/website/pageloadfast/index.htlm",
+		"/home/barend/Desktop/website/gorgeous-blog/index.html",
+		"/home/barend/Desktop/website/gorgeous-blog/index.fast.html",
+		"/home/barend/Desktop/website/gorgeous-blog/untitled.html",
+		"/home/barend/vagrantfiles/swift/Vagrantfile",
+		"/home/barend/VagrantfileXFCE",
+		"/home/barend/swiftvagrant/swift/Vagrantfile",
+		"/home/barend/Desktop/python/xkcd-python/download.py"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"```",
+			"getlangs",
+			"aliase",
+			"usage",
+			">>> ",
+			"\"",
+			"[",
+			"  ",
+			"150",
+			"'",
+			" ",
+			"varc",
+			"var",
+			"col-xs-12",
+			"/*",
+			"1",
+			"\"})",
+			" ",
+			"50px",
+			"'",
+			">/",
+			"sudo",
+			"t",
+			"comic",
+			"{%",
+			"%}",
+			"Comic",
+			"\"'\"",
+			"\"'\")\n",
+			"'",
+			"\")",
+			">>> ",
+			"`",
+			"+",
+			".",
+			",",
+			":",
+			";",
+			".",
+			"#",
+			"@",
+			">>> ",
+			"and",
+			"==",
+			"i ",
+			"0000",
+			"bottom",
+			"left",
+			"n",
+			"40755",
+			"return",
+			"  ",
+			"   ",
+			"    ",
+			"if",
+			"scroll",
+			"'",
+			","
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Abel"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "changes.patch",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Diff/Diff.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "changes.sublime-workspace",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "LICENSE",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18091,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "old-paste.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7602,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "paste.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8008,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "paste.sublime-workspace",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								805,
+								805
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "paste.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
