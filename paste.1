@@ -1,0 +1,39 @@
+.TH paste 1 "June 18, 2016" "version 1.0"
+
+.SH NAME
+paste - Python client for Debian Pastezone
+
+.SH SYNOPSIS
+Run the program with python3 paste.py
+
+.SH DESCRIPTION
+paste is a simple client for Debian Pastezone written in Python
+
+Usage: paste.py [options] ACTION <args>
+
+.SH OPTIONS
+  --name, -n      Name of paste author                (default: username)
+  --expire, -e    Time at which your paste expires    (defaults: 72 hours)
+  --lang, -l      Type of language to highlight       (default: Plain)
+  --private, -p   Create unlisted paste               (default: no)
+  --server, -s    Which server to use                 (default: paste.debian.net)
+  --verbose, -v   More output                         (default: no)
+
+Actions:
+
+    help            Print more verbose help about specific action: <action>
+  addurl            Add short-URL: <url>
+     get            Retrieve paste from server: <id>
+     del            Delete paste from server: <digest>
+     add            Add paste to the server (reads from standard input)
+  geturl            Resolve short-URL: <url>
+  getclicks         Get clicks of short URL: <url>
+  getlangs          Get supported language highlighting types from server
+
+.SH BUGS
+Report bugs and issues at <https://github.com/bvanrijn/debianpaste-clients/issues/new>
+
+.SH AUTHOR
+Copyright 2007-2011 Michael Gebetsroither <michael@mgeb.org>
+
+Copyright 2016 Github user bvanrijn, <b.vanrijn@me.com>
