@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # Filename:                                paste
 # Purpose:                                 XmlRpc interface client to paste.debian.net
 # Original code by:                        Copyright 2007-2011 Michael Gebetsroither <michael@mgeb.org>
